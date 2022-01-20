@@ -70,7 +70,7 @@ class ModelArgs:
     save_optimizer_and_scheduler: bool = True
     save_recent_only: bool = True
     save_steps: int = 2000
-    silent: bool = False
+    silent: bool = True
     tensorboard_dir: str = None
     thread_count: int = None
     train_batch_size: int = 8
