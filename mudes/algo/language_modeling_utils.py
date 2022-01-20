@@ -87,7 +87,7 @@ class SimpleDataset(Dataset):
                             tqdm(
                                 p.imap(encode_sliding_window, lines, chunksize=args.multiprocessing_chunksize),
                                 total=len(lines),
-                                # disable=silent,
+                                disable=True,
                             )
                         )
                 else:
@@ -106,7 +106,7 @@ class SimpleDataset(Dataset):
                             tqdm(
                                 p.imap(encode, lines, chunksize=args.multiprocessing_chunksize),
                                 total=len(lines),
-                                # disable=silent,
+                                disable=True,
                             )
                         )
                 else:
